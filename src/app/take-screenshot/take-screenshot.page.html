@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Take a Screenshot</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="save()">File Screenshot</ion-button>
+  <ion-button (click)="getURI()" color="danger">URI Screenshot</ion-button>
+
+
+  <img [src]="uri" alt="Screenshot vai aqui" style="width: 80%; margin: 0 auto; border: 1px dotted red;">
+</ion-content>

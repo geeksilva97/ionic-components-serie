@@ -8,13 +8,18 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'take-screenshot',
     pathMatch: 'full'
   },
   {
     path: 'modal',
     loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   },
+  {
+    path: 'take-screenshot',
+    loadChildren: () => import('./take-screenshot/take-screenshot.module').then( m => m.TakeScreenshotPageModule)
+  },
+
 ];
 
 @NgModule({
